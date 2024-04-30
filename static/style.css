@@ -1,0 +1,237 @@
+/* Global variables */
+:root {
+  --backdrop-filter-blur: blur(20px);
+  --glass-color: rgba(217, 217, 217, 0);
+
+  
+}
+
+body {
+
+  background-image:url(/static/Frame\ 5.png);
+  background-size: cover;
+  height: 100vh;
+  padding: 30;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: wheat;
+  background-color: #120e2f;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  z-index: 40;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: var(--backdrop-filter-blur);
+  width: 90%;
+
+ 
+}
+
+/* main glass */
+.glass {
+  position: absolute;
+
+  top: 25px;
+  right: 100px;
+  
+  /* bottom: -30px; */
+  border-radius: 40px;
+  background-color: var(--glass-color);
+  /* New glass color with slight transparency */
+  backdrop-filter: var(--backdrop-filter-blur);
+  /* Increased blur effect */
+  -webkit-backdrop-filter: var(--backdrop-filter-blur);
+  /* For Safari */
+  border: 2px solid;
+  /* Changed border style */
+  /* border-image-source: linear-gradient(45deg, rgba(255, 0, 0, 0.7), rgba(0, 255, 0, 0.7), rgba(0, 0, 255, 0.7)); */
+  border-image-slice: 1;
+  box-sizing: border-box;
+  width: 70vw;
+  /* Specified width */
+  height: 95vh;
+  /* Specified height */  
+
+}
+
+
+
+/* .glass::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 120%;
+  height: 120%;
+  background-image:
+    url(''),
+    url('leaf2.png'),
+    url('leaf3.png');
+  background-position:
+    left center,
+    right center,
+    center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+} */
+
+header,
+footer {
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* textarea- where user will send message */
+.messages {
+  height: 70vh;
+  overflow-y: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: rgba(217, 217, 217, 0);
+  /* Semi-transparent 
+
+
+  background */
+  backdrop-filter: var(--backdrop-filter-blur);
+  /* Blur effect */
+  -webkit-backdrop-filter: var(--backdrop-filter-blur);
+  /* For Safari */
+  border-radius: 30px;
+  /* border: px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* message which user send */
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  background: rgba(217, 217, 217, 0.1);
+  --backdrop-filter-blur: var(--backdrop-filter-blur);
+  --webkit-backdrop-filter: var(--backdrop-filter-blur);
+
+
+
+/* 
+message.ai {
+  align-self: flex-start;
+  color: #f5deb3;
+  background-color: #eee;
+} */
+
+
+ /* For Safari */
+  }
+
+  .message.user {
+    align-self: flex-end;
+    color: #f5deb3; 
+    background-color: var(--light-green);
+  }
+
+  .message.ai {
+    align-self: flex-start;
+    color: #ffffff;
+    /* #f5deb3 */
+    /* background-color: var(--light-green); */
+    background: rgba(217, 217, 217, 0.1);
+  }
+    /* #eee;  */
+
+
+
+/* input area */
+.input-group {
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+  align-items: center;
+
+
+}
+
+textarea {
+  flex-grow: 1;
+  resize: none;
+
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: rgba(217, 217, 217, 0.1);
+  /* Semi-transparent textarea */
+  border: 1px rgba(255, 255, 255, 0.5);
+  color: white;
+  ;
+}
+
+/* butoon ask */
+button {
+
+  padding: 10px 20px;
+  border-radius: 10000px;
+  height: 5vh;
+  /* border: 2px solid red; */
+  /* border-image-source: linear-gradient(45deg, rgba(255, 0, 0, 0.7), rgba(0, 255, 0, 0.7), rgba(0, 0, 255, 0.7)); */
+  /* border-image-slice: 1;
+  width: auto; */
+  cursor: pointer;
+  /* background-color: #333; */
+  transition: background-color 0.3s, transform 0.3s;
+  position: absolute;
+  right: 20px;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+  color: white;
+  background: linear-gradient(45deg, #43EA8A, #1ABDFF, #A259FF, #F24E1E);
+  border: none;
+  padding: 0.5rem;
+
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.812);
+  transform: scale(1.05);
+
+}
+
+textarea:hover {
+  transform: scaleY(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* image code for background 
+  .image-removebg-preview-1-1 {
+    position: absolute;
+    top: 217px;
+    left: 797px;
+    width: 398px;
+    height: 476px;
+    object-fit: cover;  */

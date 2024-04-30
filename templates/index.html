@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>talker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="container glass main-container">
+    <header>
+      <!-- <h1>Welcome to Ayurveda GPT</h1> -->
+    </header>
+    <main>
+      <div class="chat-container">
+        <div id="messageArea" class="messages"></div>
+        <div class="input-group">
+          <textarea id="messageInput" placeholder="Type your query about Ayurveda here..."></textarea>
+          <button id="sendMessage"> Find answer</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Powered by ASTUCH.</p>
+    </footer>
+  </div>
+  
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

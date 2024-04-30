@@ -1,0 +1,41 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- FILEPATH: /c:/Users/mv119/Documents/Testing of gpt/templates/login.html -->
+    <!-- BEGIN: ed8c6549bwf9 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <!-- END: ed8c6549bwf9 -->
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <h2>brainitix</h2>
+        <form method="post">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <label>
+                <input type="checkbox" name="terms">
+                I agree to Terms & Conditions
+            </label>
+            <label>
+                <input type="checkbox" name="remember">
+                Remember me
+            </label>
+            <button type="submit">Login</button>
+        </form>
+        <a href="{{ url_for('register') }}">Don't have an account? Register here</a>
+        <div class="login-methods">
+            <p>Or</p>
+            <div class="login-google">
+                <i class="fab fa-google"></i>
+                <span>Log in with Google</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+</body>
+</html> {% endcomment %}

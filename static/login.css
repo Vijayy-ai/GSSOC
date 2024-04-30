@@ -1,0 +1,129 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #F24E1E, #A259FF, #1ABDFF, #43EA8A);
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    animation: Gradient 5s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 2rem;
+    max-width: 350px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #FFF;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background: transparent;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    color: #FFF;
+}
+
+button {
+    background: linear-gradient(45deg, #43EA8A, #1ABDFF, #A259FF, #F24E1E);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+}
+
+.login-methods {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.login-methods p {
+    color: #FFF;
+    margin-bottom: 0.5rem;
+}
+
+.login-google {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-google:hover {
+    transform: scale(1.05);
+}
+
+.login-google i {
+    color: #FFF;
+    margin-right: 0.5rem;
+}
+
+.login-google span {
+    color: #FFF;
+}
+
+/* Added CSS code for the new merged code */
+
+/* .register-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 2rem;
+    max-width: 350px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-methods {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto
+/* } */  
